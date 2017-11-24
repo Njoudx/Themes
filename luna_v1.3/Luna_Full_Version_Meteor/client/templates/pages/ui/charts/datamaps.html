@@ -1,0 +1,57 @@
+<template name="datamaps">
+    <div class="container-fluid">
+
+        {{> pageHeader category='Charts and graphs' section='General' title='Datamaps' icon="pe-7s-map-marker" desc='Customizable SVG map visualizations for the web' }}
+
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="panel panel-filledr">
+
+                    <div class="panel-body">
+                        <div class="text-center">
+                            <span class="m-r-lg">USA <i class="fa fa-long-arrow-right"></i> <span class="c-accent">RUS</span></span>
+                            <span class="m-r-lg">USA <i class="fa fa-long-arrow-right"></i> <span class="c-accent">DEU</span></span>
+                            <span class="m-r-lg">USA <i class="fa fa-long-arrow-right"></i> <span class="c-accent">POL</span></span>
+                            <span class="m-r-lg">USA <i class="fa fa-long-arrow-right"></i> <span class="c-accent">JAP</span></span>
+                            <span class="m-r-lg">USA <i class="fa fa-long-arrow-right"></i> <span class="c-accent">AUS</span></span>
+                            <span class="m-r-lg">USA <i class="fa fa-long-arrow-right"></i> <span class="c-accent">BRA</span></span>
+                            <hr />
+                        </div>
+                        <div id="arc_map"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="panel">
+                    <div class="panel-heading">
+                        {{>panelTools }}
+                        Example with selected region
+                    </div>
+                    <div class="panel-body">
+                        <div id="select_map"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="panel">
+                    <div class="panel-heading">
+                        {{>panelTools }}
+                        Example with bubbles
+                    </div>
+                    <div class="panel-body">
+                        <div id="bubble_map"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+</template>

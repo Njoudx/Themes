@@ -1,0 +1,111 @@
+<template name="flotCharts">
+
+    <div class="container-fluid">
+
+        {{> pageHeader category='Charts and graphs' section='General' title='Flot charts' icon="pe-7s-graph2" desc='Flot is a pure JavaScript plotting library for jQuery, with a focus on simple usage, attractive looks and interactive features.' }}
+
+
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="panel">
+                    <div class="panel-heading">
+                        {{>panelTools }}
+                        Points type chart
+                    </div>
+                    <div class="panel-body">
+                        <div class="flot-chart">
+                            <div class="flot-chart-content" id="flotExample1"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="panel">
+                    <div class="panel-heading">
+                        {{>panelTools }}
+                        Line type chart
+                    </div>
+                    <div class="panel-body">
+                        <div class="flot-chart">
+                            <div class="flot-chart-content" id="flotExample2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-md-6">
+                <div class="panel">
+                    <div class="panel-heading">
+                        {{>panelTools }}
+                        Line type chart with tension
+                    </div>
+                    <div class="panel-body">
+                        <div class="flot-chart">
+                            <div class="flot-chart-content" id="flotExample5"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="panel">
+                    <div class="panel-heading">
+                        {{>panelTools }}
+                        Line type chart with steps
+                    </div>
+                    <div class="panel-body">
+                        <div class="flot-chart">
+                            <div class="flot-chart-content" id="flotExample4"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="panel">
+                    <div class="panel-heading">
+                        {{>panelTools }}
+                        Bar type chart
+                    </div>
+                    <div class="panel-body">
+                        <div class="flot-chart">
+                            <div class="flot-chart-content" id="flotExample3"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="panel">
+                    <div class="panel-heading">
+                        {{>panelTools }}
+                        Filled Area type chart
+                    </div>
+                    <div class="panel-body">
+                        <div class="flot-chart">
+                            <div class="flot-chart-content" id="flotExample6"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</template>

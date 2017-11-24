@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Bootstrap 4 UI / Starter Kit">
+    <meta name="author" content="kingstudio.ro">
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png">
+    <!-- Site Title -->
+    <title>BS4Start</title>
+    <!-- Bootstrap 4 core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- navigation menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-faded sticky-top">
+        <div class="container full-width">
+            <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+            
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Layout</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" href="grid-layouts.html">Grid / Layouts</a>
+                            <a class="dropdown-item" href="media-objects.html">Media Objects</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Content</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown02">
+                            <a class="dropdown-item" href="typography.html">Typography</a>
+                            <a class="dropdown-item" href="tables.html">Tables</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Components</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown03">
+                            <a class="dropdown-item" href="alerts-badges.html">Alerts & Badges</a>
+                            <a class="dropdown-item" href="buttons.html">Buttons</a>
+                            <a class="dropdown-item" href="cards.html">Cards</a>
+                            <a class="dropdown-item" href="carousel.html">Carousel</a>
+                            <a class="dropdown-item" href="collapse-dropdowns.html">Collapse & Dropdowns</a>
+                            <a class="dropdown-item active" href="forms-input.html">Forms & Input Groups</a>
+                            <a class="dropdown-item" href="modals.html">Modals</a>
+                            <a class="dropdown-item" href="navigations.html">Navigations</a>
+                            <a class="dropdown-item" href="popovers-tooltips.html">Popovers & Tooltips</a>
+                            <a class="dropdown-item" href="progress.html">Progress</a>
+                            <a class="dropdown-item" href="headers.html">Headers</a>
+                            <a class="dropdown-item" href="content-blocks.html">Content Blocks</a>
+                            <a class="dropdown-item" href="sliders.html">Sliders</a>
+                            <a class="dropdown-item" href="footers.html">Footers</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Starter Templates</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown04">
+                            <a class="dropdown-item" href="basic-template.html">Basic</a>
+                            <a class="dropdown-item" href="business-template.html">Business</a>
+                            <a class="dropdown-item" href="portfolio-template.html">Portfolio</a>
+                            <a class="dropdown-item" href="blog-template.html">Blog</a>
+                            <a class="dropdown-item" href="landing-page-template.html">Landing Page</a>
+                            <a class="dropdown-item" href="shop-template.html">Shop</a>
+                            <a class="dropdown-item" href="404.html">404</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div><!-- container full-width -->
+    </nav>
+    <!-- / navigation menu -->
+
+    <div class="container">
+        <h4 class="text-center inner-space-top-2x inner-space-bottom">Forms & Input</h4>
+        <!-- radio colors -->
+        <h4 class="sub-title space-top space-bottom">Radio Colors</h4>
+        <div class="btn-group mr-2">
+            <div class="radio radio-primary">
+                <label class="hidden"><input type="radio"></label>
+                <input type="radio" name="radio" id="radio1" value="option1" checked>
+                <label for="radio1">
+                    <span>Primary</span>
+                </label>
+            </div>
+        </div><!-- / btn-group -->
+        <div class="btn-group mr-2">
+            <div class="radio">
+                <label class="hidden"><input type="radio"></label>
+                <input type="radio" name="radio2" id="radio2" value="option2" checked>
+                <label for="radio2">
+                    <span>Default</span>
+                </label>
+            </div>
+        </div><!-- / btn-group -->
+        <div class="btn-group mr-2">
+            <div class="radio radio-success">
+                <label class="hidden"><input type="radio"></label>
+                <input type="radio" name="radio3" id="radio3" value="option3" checked>
+                <label for="radio3">
+                    <span>Success</span>
+                </label>
+            </div>
+        </div><!-- / btn-group -->
+        <div class="btn-group mr-2">
+            <div class="radio radio-info">
+                <label class="hidden"><input type="radio"></label>
+                <input type="radio" name="radio4" id="radio4" value="option4" checked>
+                <label for="radio4">
+                    <span>Info</span>
+                </label>
+            </div>
+        </div><!-- / btn-group -->
+        <div class="btn-group mr-2">
+            <div class="radio radio-warning">
+                <label class="hidden"><input type="radio"></label>
+                <input type="radio" name="radio5" id="radio5" value="option5" checked>
+                <label for="radio5">
+                    <span>Warning</span>
+                </label>
+            </div>
+        </div><!-- / btn-group -->
+        <div class="btn-group mr-2">
+            <div class="radio radio-danger">
+                <label class="hidden"><input type="radio"></label>
+                <input type="radio" name="radio6" id="radio6" value="option6" checked>
+                <label for="radio6">
+                    <span>Danger</span>
+                </label>
+            </div>
+        </div><!-- / btn-group -->
+        <!-- / radio colors -->
+
+        <div class="spacer">&nbsp;</div>
+
+        <!-- radio states -->
+        <h4 class="sub-title space-top space-bottom">Radio States</h4>
+        <div class="btn-group mr-2">
+            <div class="radio radio-primary">
+                <label class="hidden"><input type="radio"></label>
+                <input type="radio" name="radio7" id="radio7" value="option7" checked>
+                <label for="radio7">
+                    <span>Checked</span>
+                </label>
+            </div>
+        </div><!-- / btn-group -->
+        <div class="btn-group mr-2">
+            <div class="radio radio-primary">
+                <label class="hidden"><input type="radio"></label>
+                <input type="radio" name="radio7" id="radio8" value="option8">
+                <label for="radio8">
+                    <span>Unchecked</span>
+                </label>
+            </div>
+        </div><!-- / btn-group -->
+        <div class="btn-group mr-2">
+            <div class="radio radio-primary">
+                <label class="hidden"><input type="radio"></label>
+                <input type="radio" name="radio9" id="radio9" value="option9" disabled>
+                <label for="radio9">
+                    <span>Disabled</span>
+                </label>
+            </div>
+        </div><!-- / btn-group -->
+
+        <div class="btn-group mr-2">
+            <div class="radio radio-primary">
+                <label class="hidden"><input type="radio"></label>
+                <input type="radio" name="radio10" id="radio10" value="option10" checked disabled>
+                <label for="radio10">
+                    <span>Checked Disabled</span>
+                </label>
+            </div>
+        </div><!-- / btn-group -->
+        <!-- / radio states -->
+
+        <div class="spacer">&nbsp;</div>
+
+        <!-- checkbox colors -->
+        <h4 class="sub-title space-top space-bottom">Checkbox Colors</h4>
+        <div class="btn-group mr-2">
+            <div class="checkbox checkbox-primary">
+                <label class="hidden"><input type="checkbox"></label>
+                <input id="checkbox1" type="checkbox" checked>
+                <label for="checkbox1">
+                    Primary
+                </label>
+            </div>
+        </div><!-- / btn-group -->
+        <div class="btn-group mr-2">
+            <div class="checkbox checkbox-secondary">
+                <label class="hidden"><input type="checkbox"></label>
+                <input id="checkbox2" type="checkbox" checked>
+                <label for="checkbox2">
+                    Secondary
+                </label>
+            </div>
+        </div><!-- / btn-group -->
+        <div class="btn-group mr-2">
+            <div class="checkbox checkbox-success">
+                <label class="hidden"><input type="checkbox"></label>
+                <input id="checkbox3" type="checkbox" checked>
+                <label for="checkbox3">
+                    Success
+                </label>
+            </div>
+        </div><!-- / btn-group -->
+        <div class="btn-group mr-2">
+            <div class="checkbox checkbox-info">
+                <label class="hidden"><input type="checkbox"></label>
+                <input id="checkbox4" type="checkbox" checked>
+                <label for="checkbox4">
+                    Info
+                </label>
+            </div>
+        </div><!-- / btn-group -->
+        <div class="btn-group mr-2">
+            <div class="checkbox checkbox-warning">
+                <label class="hidden"><input type="checkbox"></label>
+                <input id="checkbox5" type="checkbox" checked>
+                <label for="checkbox5">
+                    Warning
+                </label>
+            </div>
+        </div><!-- / btn-group -->
+        <div class="btn-group mr-2">
+            <div class="checkbox checkbox-danger">
+                <label class="hidden"><input type="checkbox"></label>
+                <input id="checkbox6" type="checkbox" checked>
+                <label for="checkbox6">
+                    Danger
+                </label>
+            </div>
+        </div><!-- / btn-group -->
+        <!-- / checkbox colors -->
+
+        <div class="spacer">&nbsp;</div>
+
+        <!-- checkbox states -->
+        <h4 class="sub-title space-top space-bottom">Checkbox States</h4>
+        <div class="btn-group mr-2">
+            <div class="checkbox checkbox-primary">
+                <label class="hidden"><input type="checkbox"></label>
+                <input id="checkbox7" type="checkbox" checked>
+                <label for="checkbox7">
+                    Checked
+                </label>
+            </div>
+        </div><!-- / btn-group -->
+        <div class="btn-group mr-2">
+            <div class="checkbox checkbox-primary">
+                <label class="hidden"><input type="checkbox"></label>
+                <input id="checkbox8" type="checkbox">
+                <label for="checkbox8">
+                    Unchecked
+                </label>
+            </div>
+        </div><!-- / btn-group -->
+        <div class="btn-group mr-2">
+            <div class="checkbox checkbox-primary">
+                <label class="hidden"><input type="checkbox"></label>
+                <input id="checkbox9" type="checkbox" disabled>
+                <label for="checkbox9">
+                    Disabled
+                </label>
+            </div>
+        </div><!-- / btn-group -->
+        <div class="btn-group mr-2">
+            <div class="checkbox checkbox-primary">
+                <label class="hidden"><input type="checkbox"></label>
+                <input id="checkbox10" type="checkbox" checked disabled>
+                <label for="checkbox10">
+                    Checked Disabled
+                </label>
+            </div>
+        </div><!-- / btn-group -->
+        <!-- / checkbox states -->
+
+        <div class="spacer">&nbsp;</div>
+
+        <!-- form controls -->
+        <h4 class="sub-title space-top space-bottom">Form Controls</h4>
+        <form>
+            <div class="form-group">
+                <label for="email-input">Email Input</label>
+                <input type="email" class="form-control" id="email-input" aria-describedby="email-help" placeholder="Email">
+                <small id="email-help" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div><!-- / form-group -->
+            <div class="form-group">
+                <label for="password-input">Password Input</label>
+                <input type="password" class="form-control" id="password-input" placeholder="Password">
+            </div><!-- / form-group -->
+            <div class="form-group">
+                <label for="select">Select</label>
+                <select class="form-control selector" id="select">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div><!-- / form-group -->
+            <div class="form-group">
+                <label for="multiple-select">Multiple Select</label>
+                <select multiple class="form-control multiple-selector" id="multiple-select">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div><!-- / form-group -->
+            <div class="form-group">
+                <label for="textarea">Textarea</label>
+                <textarea class="form-control" id="textarea" rows="3"></textarea>
+            </div><!-- / form-group -->
+            <div class="form-group">
+                <label class="d-block">File Input</label>
+                <label class="btn btn-sm btn-primary btn-file">
+                    <i class="md-icon dp18 mr-2">file_upload</i><span> Choose File</span><input type="file">
+                </label>
+                <small id="file-help" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+            </div><!-- / form-group -->
+            <fieldset class="form-group">
+                <div class="form-check">
+                    <div class="radio radio-primary">
+                        <label class="hidden"><input type="radio"></label>
+                        <input type="radio" name="radio11" id="radio11" value="option11">
+                        <label for="radio11">
+                            <span>Option 1</span>
+                        </label>
+                    </div>
+                    <div class="radio radio-primary">
+                        <label class="hidden"><input type="radio"></label>
+                        <input type="radio" name="radio11" id="radio12" value="option12">
+                        <label for="radio12">
+                            Option 2
+                        </label>
+                    </div>
+                    <div class="radio radio-primary">
+                        <label class="hidden"><input type="radio"></label>
+                        <input type="radio" name="radio11" id="radio13" value="option13" disabled>
+                        <label for="radio13">
+                            Option 3 is disabled
+                        </label>
+                    </div>
+                </div><!-- / form-check -->
+            </fieldset><!-- / form-group -->
+            <div class="form-check">
+                <div class="checkbox checkbox-primary">
+                    <label class="hidden"><input type="checkbox"></label>
+                    <input id="checkbox11" type="checkbox">
+                    <label for="checkbox11">
+                        Check me out
+                    </label>
+                </div>
+            </div><!-- / form-check -->
+            <button type="submit" class="btn btn-primary">Submit Button</button>
+        </form><!-- / form -->
+        <!-- / form controls -->
+
+        <div class="spacer-2x">&nbsp;</div>
+
+        <!-- textual inputs -->
+        <h4 class="sub-title space-top space-bottom">Textual Inputs</h4>
+        <div class="form-group row">
+            <label for="text-input" class="col-2 col-form-label">Text</label>
+            <div class="col-10">
+                <input class="form-control" type="text" value="This is a text input" id="text-input">
+            </div>
+        </div><!-- / row -->
+        <div class="form-group row">
+            <label for="search-input" class="col-2 col-form-label">Search</label>
+            <div class="col-10">
+                <input class="form-control" type="search" value="Search for..." id="search-input">
+            </div>
+        </div><!-- / row -->
+        <div class="form-group row">
+            <label for="email-input2" class="col-2 col-form-label">Email</label>
+            <div class="col-10">
+                <input class="form-control" type="email" value="your-email@email.com" id="email-input2">
+            </div>
+        </div><!-- / row -->
+        <div class="form-group row">
+            <label for="url-input" class="col-2 col-form-label">URL</label>
+            <div class="col-10">
+                <input class="form-control" type="url" value="http://www.kingstudio.ro" id="url-input">
+            </div>
+        </div><!-- / row -->
+        <div class="form-group row">
+            <label for="tel-input" class="col-2 col-form-label">Telephone</label>
+            <div class="col-10">
+                <input class="form-control" type="tel" value="1-(234)-567-8900" id="tel-input">
+            </div>
+        </div><!-- / row -->
+        <div class="form-group row">
+            <label for="password-input2" class="col-2 col-form-label">Password</label>
+            <div class="col-10">
+                <input class="form-control" type="password" value="password-placeholder" id="password-input2">
+            </div>
+        </div><!-- / row -->
+        <div class="form-group row">
+            <label for="number-input" class="col-2 col-form-label">Number</label>
+            <div class="col-10">
+                <input class="form-control" type="number" value="47" id="number-input">
+            </div>
+        </div><!-- / row -->
+        <div class="form-group row">
+            <label for="datetime-local-input" class="col-2 col-form-label">Date and time</label>
+            <div class="col-10">
+                <input class="form-control" type="datetime-local" value="2017-05-14T23:41:00" id="datetime-local-input">
+            </div>
+        </div><!-- / row -->
+        <div class="form-group row">
+            <label for="date-input" class="col-2 col-form-label">Date</label>
+            <div class="col-10">
+                <input class="form-control" type="date" value="2017-05-14" id="date-input">
+            </div>
+        </div><!-- / row -->
+        <div class="form-group row">
+            <label for="month-input" class="col-2 col-form-label">Month</label>
+            <div class="col-10">
+                <input class="form-control" type="month" value="2017-05" id="month-input">
+            </div>
+        </div><!-- / row -->
+        <div class="form-group row">
+            <label for="week-input" class="col-2 col-form-label">Week</label>
+            <div class="col-10">
+                <input class="form-control" type="week" value="2017-W19" id="week-input">
+            </div>
+        </div><!-- / row -->
+        <div class="form-group row">
+            <label for="time-input" class="col-2 col-form-label">Time</label>
+            <div class="col-10">
+                <input class="form-control" type="time" value="23:43:00" id="time-input">
+            </div>
+        </div><!-- / row -->
+        <div class="form-group row">
+            <label for="color-input" class="col-2 col-form-label">Color</label>
+            <div class="col-10">
+                <input class="form-control" type="color" value="#3f50b5" id="color-input">
+            </div>
+        </div><!-- / row -->
+        <!-- / textual-inputs -->
+
+        <div class="spacer">&nbsp;</div>
+
+        <!-- inline form -->
+        <h4 class="sub-title space-top space-bottom">Inline Form</h4>
+        <form class="form-inline">
+            <label class="sr-only" for="inline-form-name">Name</label>
+            <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inline-form-name" placeholder="John Doe">
+
+            <label class="sr-only" for="inline-form-username">Username</label>
+            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                <div class="input-group-addon">@</div>
+                <input type="text" class="form-control" id="inline-form-username" placeholder="jdoe">
+            </div><!-- / input-group -->
+
+            <div class="form-check mb-2 mr-sm-2 mb-sm-0 ml-1">
+                <div class="checkbox checkbox-primary">
+                    <label class="hidden"><input type="checkbox"></label>
+                    <input id="checkbox12" type="checkbox">
+                    <label for="checkbox12">
+                        Remember Me
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary ml-1">Submit</button>
+        </form><!-- / form-inline -->
+        <!-- / inline form -->
+
+        <div class="spacer">&nbsp;</div>
+
+        <!-- inline form with preference -->
+        <h4 class="sub-title space-top space-bottom">Inline Form with preference</h4>
+        <form class="form-inline">
+            <label class="mr-sm-2" for="inline-form-select">Preference</label>
+            <select class="form-control selector mb-2 mr-sm-2 mb-sm-0" id="inline-form-select">
+                <option selected>Choose...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+
+            <div class="form-check mb-2 mr-sm-2 mb-sm-0 ml-1">
+                <div class="checkbox checkbox-primary">
+                    <label class="hidden"><input type="checkbox"></label>
+                    <input id="checkbox13" type="checkbox">
+                    <label for="checkbox13">
+                        Remember my preference
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form><!-- / form-inline -->
+        <!-- / inline form with preference -->
+
+        <div class="spacer">&nbsp;</div>
+
+        <!-- validation -->
+        <h4 class="sub-title space-top space-bottom">Validation</h4>
+        <div class="form-group has-feedback has-success">
+            <label class="form-control-label" for="inputSuccess1">Input with success</label>
+            <input type="text" class="form-control form-control-success" id="inputSuccess1">
+            <div class="form-control-feedback">Success! You've done it.</div>
+            <small class="form-text text-muted">Example help text that remains unchanged.</small>
+        </div><!-- / form-group -->
+
+        <div class="form-group has-feedback has-warning">
+            <label class="form-control-label" for="inputWarning1">Input with warning</label>
+            <input type="text" class="form-control form-control-warning" id="inputWarning1">
+            <div class="form-control-feedback">Shucks, check the formatting of that and try again.</div>
+            <small class="form-text text-muted">Example help text that remains unchanged.</small>
+        </div><!-- / form-group -->
+
+        <div class="form-group has-feedback has-danger">
+            <label class="form-control-label" for="inputDanger1">Input with danger</label>
+            <input type="text" class="form-control form-control-danger" id="inputDanger1">
+            <div class="form-control-feedback">Sorry, that username's taken. Try another?</div>
+            <small class="form-text text-muted">Example help text that remains unchanged.</small>
+        </div><!-- / form-group -->
+        <!-- / validation -->
+
+        <div class="spacer">&nbsp;</div>
+
+        <h4 class="text-center inner-space-top-2x inner-space-bottom">Input Groups</h4>
+        
+        <div class="spacer">&nbsp;</div>
+
+        <!-- basic example -->
+        <h4 class="sub-title space-top space-bottom">Basic Example</h4>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label>Username</label>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">@</span>
+                    <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                </div><!-- / input-group -->
+                <br>
+                <label>Email</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+                    <span class="input-group-addon" id="basic-addon2">@example.com</span>
+                </div><!-- / input-group -->
+            </div><!-- / col -->
+
+            <div class="col-md-6">
+                <label for="basic-url">URL</label>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon3">https://example.com/users/</span>
+                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                </div><!-- / input-group -->
+                <br>
+                <label>Price</label>
+                <div class="input-group">
+                    <span class="input-group-addon">$</span>
+                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    <span class="input-group-addon">.00</span>
+                </div><!-- / input-group -->
+            </div><!-- / col -->
+        </div><!-- / row -->
+        <!-- / basic example -->
+
+        <div class="spacer">&nbsp;</div>
+
+        <!-- button addons -->
+        <h4 class="sub-title space-top space-bottom">Button addons</h4>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" type="button">Go!</button>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Search for...">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" type="button">Go!</button>
+                    </span>
+                </div>
+            </div>
+        </div><!-- / row -->
+        <br>
+        <div class="row">
+            <div class="col-md-offset-3 col-md-6">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-danger" type="button">Hate it</button>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Product name">
+                    <span class="input-group-btn">
+                        <button class="btn btn-success" type="button">Love it</button>
+                    </span>
+                </div>
+            </div>
+        </div><!-- / row -->
+        <!-- / button addons -->
+
+        <div class="spacer">&nbsp;</div>
+
+        <!-- buttons with dropdowns -->
+        <h4 class="sub-title space-top space-bottom">Buttons with dropdowns</h4>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="input-group">
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Action
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Link One</a>
+                            <a class="dropdown-item" href="#">Link Two</a>
+                        </div><!-- / dropdown-menu -->
+                    </div><!-- / input-group-btn -->
+                    <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                </div><!-- / input-group -->
+            </div><!-- / col -->
+            <div class="col-md-6">
+                <div class="input-group">
+                    <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Action
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#">Link One</a>
+                            <a class="dropdown-item" href="#">Link Two</a>
+                        </div><!-- / dropdown-menu-right -->
+                    </div><!-- / input-group-btn -->
+                </div><!-- / input-group -->
+            </div><!-- / col -->
+        </div><!-- / row -->
+        <!-- / buttons with dropdowns -->
+
+        <div class="spacer-2x">&nbsp;</div>
+
+    </div><!-- / container -->
+
+    <div class="spacer">&nbsp;</div>
+
+    <footer>
+        <div class="container-fluid">
+            <p>© 2017 BS4Start - Bootstrap 4 UI / Starter Kit</p>
+        </div><!-- / container-fluid -->
+    </footer>
+
+<!-- Core JavaScript -->
+<script src="js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- / Core JavaScript -->
+
+</body>
+
+</html>

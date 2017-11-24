@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Bootstrap 4 UI / Starter Kit">
+    <meta name="author" content="kingstudio.ro">
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png">
+    <!-- Site Title -->
+    <title>BS4Start</title>
+    <!-- Bootstrap 4 core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- navigation menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-faded sticky-top">
+        <div class="container full-width">
+            <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+            
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Layout</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" href="grid-layouts.html">Grid / Layouts</a>
+                            <a class="dropdown-item" href="media-objects.html">Media Objects</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Content</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown02">
+                            <a class="dropdown-item" href="typography.html">Typography</a>
+                            <a class="dropdown-item" href="tables.html">Tables</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Components</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown03">
+                            <a class="dropdown-item" href="alerts-badges.html">Alerts & Badges</a>
+                            <a class="dropdown-item" href="buttons.html">Buttons</a>
+                            <a class="dropdown-item" href="cards.html">Cards</a>
+                            <a class="dropdown-item" href="carousel.html">Carousel</a>
+                            <a class="dropdown-item" href="collapse-dropdowns.html">Collapse & Dropdowns</a>
+                            <a class="dropdown-item" href="forms-input.html">Forms & Input Groups</a>
+                            <a class="dropdown-item active" href="modals.html">Modals</a>
+                            <a class="dropdown-item" href="navigations.html">Navigations</a>
+                            <a class="dropdown-item" href="popovers-tooltips.html">Popovers & Tooltips</a>
+                            <a class="dropdown-item" href="progress.html">Progress</a>
+                            <a class="dropdown-item" href="headers.html">Headers</a>
+                            <a class="dropdown-item" href="content-blocks.html">Content Blocks</a>
+                            <a class="dropdown-item" href="sliders.html">Sliders</a>
+                            <a class="dropdown-item" href="footers.html">Footers</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Starter Templates</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown04">
+                            <a class="dropdown-item" href="basic-template.html">Basic</a>
+                            <a class="dropdown-item" href="business-template.html">Business</a>
+                            <a class="dropdown-item" href="portfolio-template.html">Portfolio</a>
+                            <a class="dropdown-item" href="blog-template.html">Blog</a>
+                            <a class="dropdown-item" href="landing-page-template.html">Landing Page</a>
+                            <a class="dropdown-item" href="shop-template.html">Shop</a>
+                            <a class="dropdown-item" href="404.html">404</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div><!-- container full-width -->
+    </nav>
+    <!-- / navigation menu -->
+
+    <div class="container">
+        <h4 class="text-center inner-space-top-2x inner-space-bottom">Modals</h4>
+        <div class="example-modal">
+            <div class="modal" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Modal Example</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div><!-- / modal-header -->
+                        <div class="modal-body">
+                            <p>Modal body text goes here.</p>
+                        </div><!-- / modal-body -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div><!-- / modal-footer -->
+                    </div><!-- / modal-content -->
+                </div><!-- / modal-dialog -->
+            </div><!-- / modal -->
+        </div><!-- / example-modal -->
+
+        <div class="spacer">&nbsp;</div>
+
+        <h4 class="sub-title space-top space-bottom">Modal Sizes</h4>
+        <!-- small modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".small-modal-example">Small Modal</button>
+
+        <div class="modal fade small-modal-example" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal Example</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div><!-- / modal-header -->
+                    <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                    </div><!-- / modal-body -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div><!-- / modal-footer -->
+                </div><!-- / modal-content -->
+            </div><!-- / modal-dialog -->
+        </div><!-- / modal -->
+        <!-- / small modal -->
+
+        <!-- medium modal -->
+        <button type="button" class="btn btn-primary mr-1" data-toggle="modal" data-target=".medium-modal-example">Medium Modal</button>
+
+        <div class="modal fade medium-modal-example" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal Example</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div><!-- / modal-header -->
+                    <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                    </div><!-- / modal-body -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div><!-- / modal-footer -->
+                </div><!-- / modal-content -->
+            </div><!-- modal-dialog -->
+        </div><!-- / modal -->
+        <!-- / medium modal -->
+
+        <!-- large modal -->
+        <button type="button" class="btn btn-primary mr-1" data-toggle="modal" data-target=".large-modal-example">Large Modal</button>
+
+        <div class="modal fade large-modal-example" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal Example</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div><!-- / modal-header -->
+                    <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                    </div><!-- / modal-body -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div><!-- / modal-footer -->
+                </div><!-- / modal-content -->
+            </div><!-- modal-dialog -->
+        </div><!-- / modal -->
+        <!-- / large modal -->
+
+        <div class="spacer">&nbsp;</div>
+
+        <h4 class="sub-title space-top space-bottom">Modal Variations</h4>
+        <!-- default-modal -->
+        <button type="button" class="btn btn-primary mt-2 mr-1" data-toggle="modal" data-target=".default-modal-example">Default Modal</button>
+        <!-- modal -->
+        <div class="modal fade default-modal-example" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Default Modal</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div><!-- / modal-header -->
+                    <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                    </div><!-- / modal-body -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div><!-- / modal-footer -->
+                </div><!-- / modal-content -->
+            </div><!-- / modal-dialog -->
+        </div><!-- / modal -->
+        <!-- / default-modal -->
+
+        <!-- long-modal -->
+        <button type="button" class="btn btn-primary mt-2 mr-1" data-toggle="modal" data-target=".long-modal-example">Long Content Modal</button>
+
+        <!-- modal -->
+        <div class="modal fade long-modal-example" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Long Modal</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div><!-- / modal-header -->
+                    <div class="modal-body multi-paragraph">
+                        <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+                        <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+
+                        <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+                        <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+
+                        <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+                        <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+
+                        <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+
+                        <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                    </div><!-- / modal-body -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div><!-- / modal-footer -->
+                </div><!-- / modal-content -->
+            </div><!-- / modal-dialog -->
+        </div><!-- / modal -->
+        <!-- / long-modal -->
+
+        <!-- grid-modal -->
+        <button type="button" class="btn btn-primary mt-2 mr-1" data-toggle="modal" data-target=".grid-modal-example">Grid Modal</button>
+
+        <!-- modal -->
+        <div class="modal fade grid-modal-example" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Grid Modal</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div><!-- / modal-header -->
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <!-- 2 column -->
+                            <div class="row text-center space-bottom-2x">
+                                <div class="col-6">
+                                    <div class="bg-secondary inner-space">Column 1</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="bg-secondary inner-space">Column 2</div>
+                                </div>
+                            </div><!-- / row -->
+
+                            <!-- 3 column -->
+                            <div class="row text-center space-bottom-2x">
+                                <div class="col-4">
+                                    <div class="bg-secondary inner-space">Column 1</div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="bg-secondary inner-space">Column 2</div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="bg-secondary inner-space">Column 3</div>
+                                </div>
+                            </div><!-- / row -->
+                            
+                            <!-- 4 column -->
+                            <div class="row text-center space-bottom-2x">
+                                <div class="col-3">
+                                    <div class="bg-secondary inner-space">Col 1</div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="bg-secondary inner-space">Col 2</div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="bg-secondary inner-space">Col 3</div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="bg-secondary inner-space">Col 4</div>
+                                </div>
+                            </div><!-- / row -->
+
+                            <!-- 6 column -->
+                            <div class="row text-center space-bottom-2x">
+                                <div class="col-2">
+                                    <div class="bg-secondary inner-space">Col 1</div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="bg-secondary inner-space">Col 2</div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="bg-secondary inner-space">Col 3</div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="bg-secondary inner-space">Col 4</div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="bg-secondary inner-space">Col 5</div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="bg-secondary inner-space">Col 6</div>
+                                </div>
+                            </div><!-- / row -->
+                        </div><!-- / container-fluid -->
+                    </div><!-- / modal-body -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div><!-- / modal-footer -->
+                </div><!-- / modal-content -->
+            </div><!-- / modal-dialog -->
+        </div><!-- / modal -->
+        <!-- / grid-modal -->
+
+        <!-- var-modal -->
+        <button type="button" class="btn btn-primary mt-2 mr-1" data-toggle="modal" data-target="#var-modal-example" data-whatever="@user">Varying Modal</button>
+
+        <!-- modal -->
+        <div class="modal fade" id="var-modal-example" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Varying Modal</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div><!-- / modal-header -->
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="form-control-label">Recipient:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="form-control-label">Message:</label>
+                                <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                        </form>
+                    </div><!-- / modal-body -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div><!-- / modal-footer -->
+                </div><!-- / modal-content -->
+            </div><!-- / modal-dialog -->
+        </div><!-- / modal -->
+        <!-- / var-modal -->
+
+        <div class="spacer">&nbsp;</div>
+
+        <h4 class="sub-title space-top space-bottom">Modal Colors</h4>
+        <!-- modal inverse -->
+        <div class="example-modal">
+            <div class="modal" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                    <div class="inverse modal-inverse modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Modal Inverse</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div><!-- / modal-header -->
+                        <div class="modal-body">
+                            <p>Modal body text goes here.</p>
+                        </div><!-- / modal-body -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div><!-- / modal-footer -->
+                    </div><!-- / modal-content -->
+                </div><!-- / modal-dialog -->
+            </div><!-- / modal -->
+        </div><!-- / example-modal -->
+        <!-- / modal inverse -->
+
+        <!-- modal primary -->
+        <div class="example-modal">
+            <div class="modal" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                    <div class="inverse modal-primary modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Modal Primary</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div><!-- / modal-header -->
+                        <div class="modal-body">
+                            <p>Modal body text goes here.</p>
+                        </div><!-- / modal-body -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-black">Save changes</button>
+                        </div><!-- / modal-footer -->
+                    </div><!-- / modal-content -->
+                </div><!-- / modal-dialog -->
+            </div><!-- / modal -->
+        </div><!-- / example-modal -->
+        <!-- / modal primary -->
+
+        <!-- modal success -->
+        <div class="example-modal">
+            <div class="modal" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                    <div class="inverse modal-success modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Modal Success</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div><!-- / modal-header -->
+                        <div class="modal-body">
+                            <p>Modal body text goes here.</p>
+                        </div><!-- / modal-body -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div><!-- / modal-footer -->
+                    </div><!-- / modal-content -->
+                </div><!-- / modal-dialog -->
+            </div><!-- / modal -->
+        </div><!-- / example-modal -->
+        <!-- / modal success -->
+
+        <!-- modal info -->
+        <div class="example-modal">
+            <div class="modal" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                    <div class="inverse modal-info modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Modal Info</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div><!-- / modal-header -->
+                        <div class="modal-body">
+                            <p>Modal body text goes here.</p>
+                        </div><!-- / modal-body -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div><!-- / modal-footer -->
+                    </div><!-- / modal-content -->
+                </div><!-- / modal-dialog -->
+            </div><!-- / modal -->
+        </div><!-- / example-modal -->
+        <!-- / modal info -->
+
+        <!-- modal warning -->
+        <div class="example-modal">
+            <div class="modal" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                    <div class="inverse modal-warning modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Modal Warning</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div><!-- / modal-header -->
+                        <div class="modal-body">
+                            <p>Modal body text goes here.</p>
+                        </div><!-- / modal-body -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div><!-- / modal-footer -->
+                    </div><!-- / modal-content -->
+                </div><!-- / modal-dialog -->
+            </div><!-- / modal -->
+        </div><!-- / example-modal -->
+        <!-- / modal warning -->
+
+        <!-- modal danger -->
+        <div class="example-modal">
+            <div class="modal" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                    <div class="inverse modal-danger modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Modal Danger</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div><!-- / modal-header -->
+                        <div class="modal-body">
+                            <p>Modal body text goes here.</p>
+                        </div><!-- / modal-body -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div><!-- / modal-footer -->
+                    </div><!-- / modal-content -->
+                </div><!-- / modal-dialog -->
+            </div><!-- / modal -->
+        </div><!-- / example-modal -->
+        <!-- / modal danger -->
+    </div><!-- / container -->
+
+    <div class="spacer">&nbsp;</div>
+
+    <footer>
+        <div class="container-fluid">
+            <p>© 2017 BS4Start - Bootstrap 4 UI / Starter Kit</p>
+        </div><!-- / container-fluid -->
+    </footer>
+
+<!-- Core JavaScript -->
+<script src="js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- / Core JavaScript -->
+
+<!-- Varying Modal Example -->
+<script>
+$('#var-modal-example').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var recipient = button.data('whatever') // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find('.modal-title').text('New message to ' + recipient)
+  modal.find('.modal-body input').val(recipient)
+})
+</script>
+<!-- / Varying Modal Example -->
+
+</body>
+
+</html>

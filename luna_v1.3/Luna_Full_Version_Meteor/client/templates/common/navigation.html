@@ -1,0 +1,120 @@
+<template name="navigation">
+
+    <aside class="navigation">
+        <nav>
+            <ul class="nav luna-nav">
+                <li class="nav-category">
+                    Main
+                </li>
+                <li class="{{isActivePath '/dashboard'}}">
+                    <a href="/dashboard">Dashboard</a>
+                </li>
+
+                <li class="{{isActivePath regex='activity|metrics|usage'}}">
+                    <a href="#monitoring" data-toggle="collapse" aria-expanded="false">
+                        Monitoring<span class="sub-nav-icon"> <i class="stroke-arrow"></i> </span>
+                    </a>
+                    <ul id="monitoring" class="nav nav-second collapse {{isActivePath regex='activity|metrics|usage' class='in'}}">
+                        <li class="{{isActivePath '/metrics'}}"><a href="/metrics"> Metrics</a></li>
+                        <li class="{{isActivePath '/usage'}}"><a href="/usage"> Usage</a></li>
+                        <li class="{{isActivePath '/activity'}}"><a href="/activity"> Activity</a></li>
+                    </ul>
+                </li>
+                <li class="nav-category">
+                    UI Elements
+                </li>
+                <li class="{{isActivePath regex='draggable|gridSystem|modals|panels|buttons|icons|tabs|typography|alerts|loaders'}}">
+                    <a href="#uielements" data-toggle="collapse" aria-expanded="false">
+                        General<span class="sub-nav-icon"> <i class="stroke-arrow"></i> </span>
+                    </a>
+                    <ul id="uielements" class="nav nav-second collapse {{isActivePath regex='draggable|gridSystem|modals|panels|buttons|icons|tabs|typography|alerts|loaders' class='in'}}">
+                        <li class="{{isActivePath '/panels'}}"><a href="/panels">Panels</a></li>
+                        <li class="{{isActivePath '/typography'}}"><a href="/typography">Typography</a></li>
+                        <li class="{{isActivePath '/icons'}}"><a href="/icons">Icons</a></li>
+                        <li class="{{isActivePath '/buttons'}}"><a href="/buttons">Buttons</a></li>
+                        <li class="{{isActivePath '/tabs'}}"><a href="/tabs">Tabs</a></li>
+                        <li class="{{isActivePath '/modals'}}"><a href="/modals">Modals</a></li>
+                        <li class="{{isActivePath '/alerts'}}"><a href="/alerts">Alerts</a></li>
+                        <li class="{{isActivePath '/loaders'}}"><a href="/loaders">Loaders</a></li>
+                        <li class="{{isActivePath '/gridSystem'}}"><a href="/gridSystem">Grid system</a></li>
+                        <li class="{{isActivePath '/draggable'}}"><a href="/draggable">Draggable</a></li>
+                    </ul>
+                </li>
+                <li class="{{isActivePath regex='dataTables|tableStyles'}}">
+                    <a href="#tables" data-toggle="collapse" aria-expanded="false">
+                        Tables design<span class="sub-nav-icon"> <i class="stroke-arrow"></i> </span>
+                    </a>
+                    <ul id="tables" class="nav nav-second collapse {{isActivePath regex='dataTables|tableStyles' class='in'}}">
+                        <li class="{{isActivePath '/tableStyles'}}"><a href="/tableStyles">Table styles</a></li>
+                        <li class="{{isActivePath '/dataTables'}}"><a href="/dataTables">Data Tables</a></li>
+                    </ul>
+                </li>
+                <li class="{{isActivePath regex='formElements|autocomplete|controls|textEditor'}}">
+                    <a href="#formControls" data-toggle="collapse" aria-expanded="false">
+                        Form controls<span class="sub-nav-icon"> <i class="stroke-arrow"></i> </span>
+                    </a>
+                    <ul id="formControls" class="nav nav-second collapse {{isActivePath regex='formElements|autocomplete|controls|textEditor' class='in'}}">
+                        <li class="{{isActivePath '/formElements'}}"><a href="/formElements">Form elements</a></li>
+                        <li class="{{isActivePath '/autocomplete'}}"><a href="/autocomplete">Autocomplete</a></li>
+                        <li class="{{isActivePath '/controls'}}"><a href="/controls">Selection controls</a></li>
+                        <li class="{{isActivePath '/textEditor'}}"><a href="/textEditor">Text editor</a></li>
+                    </ul>
+                </li>
+                <li class="{{isActivePath regex='sparkline|flotCharts|chartJs|datamaps'}}">
+                    <a href="#charts" data-toggle="collapse" aria-expanded="false">
+                        Charts and graphs<span class="sub-nav-icon"> <i class="stroke-arrow"></i> </span>
+                    </a>
+                    <ul id="charts" class="nav nav-second collapse {{isActivePath regex='sparkline|flotCharts|chartJs|datamaps' class='in'}}">
+                        <li class="{{isActivePath '/flotCharts'}}"><a href="/flotCharts">Flot charts</a></li>
+                        <li class="{{isActivePath '/chartJs'}}"><a href="/chartJs">ChartJS</a></li>
+                        <li class="{{isActivePath '/sparkline'}}" ><a href="/sparkline">Sparkline</a></li>
+                        <li class="{{isActivePath '/datamaps'}}" ><a href="/datamaps">Datamaps</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-category">
+                    App Pages
+                </li>
+
+                <li class="{{isActivePath regex='project|support|profile|timeline|nestableList|contacts|projects'}}">
+                    <a href="#extras" data-toggle="collapse" aria-expanded="false">
+                        Basic <span class="sub-nav-icon"> <i class="stroke-arrow"></i> </span>
+                    </a>
+                    <ul id="extras" class="nav nav-second collapse {{isActivePath regex='project|support|profile|timeline|nestableList|contacts|projects' class='in'}}">
+                        <li class="{{isActivePath '/profile'}}"><a href="/profile">Profile</a></li>
+                        <li class="{{isActivePath '/contacts'}}"><a href="/contacts">Contacts</a></li>
+                        <li class="{{isActivePath '/projects'}}"><a href="/projects">Projects</a></li>
+                        <li class="{{isActivePath '/support'}}"><a href="/support">Support</a></li>
+                        <li class="{{isActivePath '/nestableList'}}"><a href="/nestableList">List</a></li>
+                        <li class="{{isActivePath '/timeline'}}"><a href="/timeline">Timeline</a></li>
+
+                    </ul>
+                </li>
+                <li class="{{isActivePath regex='starterPage'}}">
+                    <a href="#common" data-toggle="collapse" aria-expanded="false">
+                        Common <span class="sub-nav-icon"> <i class="stroke-arrow"></i> </span>
+                    </a>
+                    <ul id="common" class="nav nav-second collapse {{isActivePath regex='starterPage' class='in'}}">
+                        <li><a href="/login">Login</a></li>
+                        <li><a href="/register">Register</a></li>
+                        <li><a href="/forgotPassword">Forgot password</a></li>
+                        <li><a href="/error">Error page</a></li>
+                    </ul>
+                </li>
+                <li class="{{isActivePath '/versions'}}">
+                    <a href="/versions">
+                        <span class="badge pull-right">2</span>
+                        Versions
+                    </a>
+                </li>
+                <li class="nav-info">
+                    <i class="pe pe-7s-shield text-accent"></i>
+                    <div class="m-t-xs">
+                        <span class="c-white">LUNA</span> admin theme with Dark UI style for monitoring and administration web applications.
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+</template>

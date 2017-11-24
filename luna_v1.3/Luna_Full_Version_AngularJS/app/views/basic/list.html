@@ -1,0 +1,76 @@
+<!-- Main content-->
+<section class="content" ng-controller="listCtrl">
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="view-header">
+                    <div class="pull-right text-right" style="line-height: 14px">
+                        <small>App Pages<br>Basic<br> <span class="c-white">Nestable list</span></small>
+                    </div>
+                    <div class="header-icon">
+                        <i class="pe page-header-icon pe-7s-menu"></i>
+                    </div>
+                    <div class="header-title">
+                        <h3>Nestable list</h3>
+                        <small>
+                            Nestable - Drag & drop hierarchical list.
+                        </small>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-8">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <div panel-tools></div>
+                        Nestable List example
+                    </div>
+                    <div class="panel-body">
+
+
+                        <p class="m-b-lg">
+                            Each list you can customize by standard css styles. Each element is responsive so you can
+                            add to it any other element to improve functionality of list.
+                        </p>
+
+                        <!-- list node template   -->
+                        <script type="text/ng-template" id="nodes_renderer.html">
+                            <div ui-tree-handle class="tree-node tree-node-content dd-handle">
+                                <a class="pull-right btn btn-default btn-xs" data-nodrag ng-click="remove(this)"><span class="fa fa-trash"></span></a>
+                                <a class="pull-right btn btn-default btn-xs" data-nodrag ng-click="newSubItem(this)"><span class="fa fa-plus"></span></a>
+                                <a class="btn btn-default btn-xs" data-nodrag ng-click="toggle(this)"><span class="fa" ng-class="{'fa-angle-down': collapsed, 'fa-angle-right': !collapsed}"></span></a>
+                                {{node.title}}
+                            </div>
+                            <ol ui-tree-nodes="" ng-model="node.nodes" ng-class="{hidden: collapsed}">
+                                <li class="dd-item" ng-repeat="node in node.nodes" ui-tree-node ng-include="'nodes_renderer.html'">
+                                </li>
+                            </ol>
+                        </script>
+                        <div ui-tree id="tree-root">
+                            <ol ui-tree-nodes ng-model="data">
+                                <li ng-repeat="node in data" ui-tree-node ng-include="'nodes_renderer.html'"></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-filled">
+                    <div class="panel-heading">
+                        <div panel-tools></div>
+                        Serialised Output
+                    </div>
+                    <div class="panel-body">
+                        <textarea id="nestable-output" class="form-control" rows="20">{{ data | json }}</textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End main content-->

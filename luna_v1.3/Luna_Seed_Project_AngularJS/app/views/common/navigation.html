@@ -1,0 +1,19 @@
+<!-- Navigation-->
+<nav ng-controller="navigationCtrl">
+    <ul class="nav luna-nav">
+        <li class="nav-category">
+            Main
+        </li>
+        <li ui-sref-active="active">
+            <a ng-click="navSelected = 'main'" ui-sref="main.main">Main</a>
+        </li>
+        <li class="nav-info">
+            <i class="pe pe-7s-shield text-accent"></i>
+
+            <div class="m-t-xs">
+                <span class="c-white">LUNA</span> admin theme with Dark UI style for monitoring and administration web applications.
+            </div>
+        </li>
+    </ul>
+</nav>
+<!-- End navigation-->

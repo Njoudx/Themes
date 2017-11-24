@@ -1,0 +1,101 @@
+<template name="autocomplete">
+
+    <div class="container-fluid">
+
+        {{> pageHeader category='Form controls' section='UI Elements' title='Autocomplete' icon="pe-7s-speaker" desc='Autocomplete is a feature in which an application predicts the rest of a word a user is typing.' }}
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel panel-filled">
+                    <div class="panel-heading">
+                        {{>panelTools }}
+                        Basic example - data-*
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                            Basic example via data attributes: <span class="text-muted">(type 'item...')</span>
+                        </p>
+                        <input type="text" placeholder="item..." data-provide="typeahead" data-source='["item 1","item 2","item 3"]' class="form-control" />
+                            <pre class="m-t-sm">
+&lt;input type="text"
+data-provide="typeahead"
+data-source='["item 1","item 2","item 3"]'
+placeholder="item..."
+class="form-control" /&gt;</pre>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="panel panel-filled">
+                    <div class="panel-heading">
+                        {{>panelTools }}
+                        Basic example - javascript
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                            Basic example via javascript <span class="text-muted">(type 'item...')</span>
+                        </p>
+                        <input type="text" placeholder="item..." class="typeahead_1 form-control" />
+                            <pre class="m-t-sm">
+&lt;input type="text" placeholder="item..."
+class="typeahead_1 form-control" /&gt;
+
+$('.typeahead_1').typeahead({
+    source: ["item 1","item 2","item 3"]
+}); </pre>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel panel-filled">
+                    <div class="panel-heading">
+                        {{>panelTools }}
+                        Loading collection
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                            Load collection from json file <span class="text-muted">(type 'Arg...')</span>
+                        </p>
+                        <input type="text" placeholder="item..." class="typeahead_2 form-control" />
+                            <pre class="m-t-sm">
+$.get('js/api/typehead_collection.json', function(data){
+    $(".typeahead_2").typeahead({ source:data.countries });
+},'json'); </pre>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="panel panel-filled">
+                    <div class="panel-heading">
+                        {{>panelTools }}
+                        Loading more complex object
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                            Load json object - required 'name' attribute <span class="text-muted">(type 'Afg...')</span>
+                        </p>
+                        <input type="text" placeholder="item..." class="typeahead_3 form-control" />
+                            <pre class="m-t-sm">
+$('.typeahead_3').typeahead({
+    source: [
+        {"name": "Afghanistan", "code": "AF", "ccn0": "040"},
+        {"name": "Land Islands", "code": "AX", "ccn0": "050"},
+        {"name": "Albania", "code": "AL","ccn0": "060"},
+        {"name": "Algeria", "code": "DZ","ccn0": "070"}
+    ]
+}); </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+
+</template>

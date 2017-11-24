@@ -1,0 +1,117 @@
+<!-- Navigation-->
+<nav ng-controller="navigationCtrl">
+    <ul class="nav luna-nav">
+        <li class="nav-category">
+            Main
+        </li>
+        <li ui-sref-active="active">
+            <a ng-click="menuSelect('dashboard', navSelected)" ui-sref="main.dashboard">Dashboard</a>
+        </li>
+
+        <li ng-class="{active: $state.includes('main.monitoring')}">
+            <a href ng-click="menuSelect('monitoring', navSelected)">
+                Monitoring{{monitoring}}<span class="sub-nav-icon"> <i class="stroke-arrow"></i> </span>
+            </a>
+            <ul class="nav nav-second" uib-collapse="isSelected('monitoring', navSelected)">
+                <li ui-sref-active="active"><a ui-sref="main.monitoring.metrics"> Metrics</a></li>
+                <li ui-sref-active="active"><a ui-sref="main.monitoring.usage"> Usage</a></li>
+                <li ui-sref-active="active"><a ui-sref="main.monitoring.activity"> Activity</a></li>
+            </ul>
+        </li>
+        <li class="nav-category">
+            UI Elements
+        </li>
+        <li ng-class="{active: $state.includes('main.general')}">
+            <a href ng-click="menuSelect('general', navSelected)">
+                General<span class="sub-nav-icon"> <i class="stroke-arrow"></i> </span>
+            </a>
+            <ul class="nav nav-second" uib-collapse="isSelected('general', navSelected)">
+                <li ui-sref-active="active"><a ui-sref="main.general.panels">Panels</a></li>
+                <li ui-sref-active="active"><a ui-sref="main.general.typography">Typography</a></li>
+                <li ui-sref-active="active"><a ui-sref="main.general.icons">Icons</a></li>
+                <li ui-sref-active="active"><a ui-sref="main.general.buttons">Buttons</a></li>
+                <li ui-sref-active="active"><a ui-sref="main.general.tabs">Tabs</a></li>
+                <li ui-sref-active="active"><a ui-sref="main.general.modals">Modals</a></li>
+                <li ui-sref-active="active"><a ui-sref="main.general.alerts">Alerts</a></li>
+                <li ui-sref-active="active"><a ui-sref="main.general.loaders">Loaders</a></li>
+                <li ui-sref-active="active"><a ui-sref="main.general.gridsystem">Grid system</a></li>
+                <li ui-sref-active="active"><a ui-sref="main.general.draggable">Draggable</a></li>
+            </ul>
+        </li>
+        <li ng-class="{active: $state.includes('main.tables')}">
+            <a href ng-click="menuSelect('tables', navSelected)">
+                Tables design<span class="sub-nav-icon"> <i class="stroke-arrow"></i> </span>
+            </a>
+            <ul class="nav nav-second" uib-collapse="isSelected('tables', navSelected)">
+                <li ui-sref-active="active"><a ui-sref="main.tables.tablestyles">Table styles</a></li>
+                <li ui-sref-active="active"><a ui-sref="main.tables.datatables">Data Tables</a></li>
+            </ul>
+        </li>
+        <li ng-class="{active: $state.includes('main.formcontrols')}">
+            <a href ng-click="menuSelect('formcontrols', navSelected)">
+                Form controls<span class="sub-nav-icon"> <i class="stroke-arrow"></i> </span>
+            </a>
+            <ul class="nav nav-second" uib-collapse="isSelected('formcontrols', navSelected)">
+                <li ui-sref-active="active"><a ui-sref="main.formcontrols.formelements"> Basic elements </a></li>
+                <li ui-sref-active="active"><a ui-sref="main.formcontrols.autocomplete"> Autocomplete </a></li>
+                <li ui-sref-active="active"><a ui-sref="main.formcontrols.controls"> Selection controls </a></li>
+                <li ui-sref-active="active"><a ui-sref="main.formcontrols.texteditor"> Text editor </a></li>
+            </ul>
+        </li>
+        <li  ng-class="{active: $state.includes('main.charts')}">
+            <a href ng-click="menuSelect('charts', navSelected)">
+                Charts and graphs<span class="sub-nav-icon"> <i class="stroke-arrow"></i> </span>
+            </a>
+            <ul class="nav nav-second" uib-collapse="isSelected('charts', navSelected)">
+                <li ui-sref-active="active"><a ui-sref="main.charts.flot">Flot charts</a></li>
+                <li ui-sref-active="active"><a ui-sref="main.charts.chartjs">ChartJS</a></li>
+                <li ui-sref-active="active"><a ui-sref="main.charts.sparkline">Sparkline</a></li>
+                <li ui-sref-active="active"><a ui-sref="main.charts.datamaps">Datamaps</a></li>
+            </ul>
+        </li>
+
+        <li class="nav-category">
+            App Pages
+        </li>
+
+        <li ng-class="{active: $state.includes('main.basic')}">
+            <a href ng-click="menuSelect('basic', navSelected)">
+                Basic <span class="sub-nav-icon"> <i class="stroke-arrow"></i> </span>
+            </a>
+            <ul class="nav nav-second" uib-collapse="isSelected('basic', navSelected)">
+                <li ui-sref-active="active"><a ui-sref="main.basic.profile">Profile</a></li>
+                <li ui-sref-active="active"><a ui-sref="main.basic.contacts">Contacts</a></li>
+                <li ui-sref-active="active"><a ui-sref="main.basic.projects">Projects</a></li>
+                <li ui-sref-active="active"><a ui-sref="main.basic.support">Support</a></li>
+                <li ui-sref-active="active"><a ui-sref="main.basic.list">List</a></li>
+                <li ui-sref-active="active"><a ui-sref="main.basic.timeline">Timeline</a></li>
+
+            </ul>
+        </li>
+        <li ng-class="{active: $state.includes('commonviews')}">
+            <a href ng-click="menuSelect('commonviews', navSelected)">
+                Common <span class="sub-nav-icon"> <i class="stroke-arrow"></i> </span>
+            </a>
+            <ul class="nav nav-second" uib-collapse="isSelected('commonviews', navSelected)">
+                <li ui-sref-active="active"><a ui-sref="commonviews.login">Login</a></li>
+                <li ui-sref-active="active"><a ui-sref="commonviews.register">Register</a></li>
+                <li ui-sref-active="active"><a ui-sref="commonviews.forgotpassword">Forgot password</a></li>
+                <li ui-sref-active="active"><a ui-sref="commonviews.error">Error page</a></li>
+            </ul>
+        </li>
+        <li ui-sref-active="active">
+            <a ui-sref="main.versions" ng-click="navSelected = 'versions'">
+                <span class="badge pull-right">2</span>
+                Versions
+            </a>
+        </li>
+        <li class="nav-info">
+            <i class="pe pe-7s-shield text-accent"></i>
+
+            <div class="m-t-xs">
+                <span class="c-white">LUNA</span> admin theme with Dark UI style for monitoring and administration web applications.
+            </div>
+        </li>
+    </ul>
+</nav>
+<!-- End navigation-->

@@ -1,0 +1,134 @@
+<!-- Main content-->
+<section class="content" ng-controller="activityCtrl">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel m-b-none">
+                    <div class="panel-body">
+                        <h3 class="m-b-xs"><i class="pe pe-7s-graph1 text-warning m-r-xs"></i> Activity <sup>example</sup></h3>
+                        <hr/>
+                        <p class="small">
+                            <span class="c-white">Monitoring view provide real time</span>
+                            data from geographically distributed servers. Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                            scrambled it to make a type specimen book.
+                        </p>
+                        <hr/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="panel">
+                    <div class="panel-body">
+
+                        <h4 class="m-t-n-sm m-b-xs">Server activity</h4>
+                        <samll>Real time geographically activity</samll>
+
+                        <datamap map="mapObject"></datamap>
+
+                        <div class="row">
+
+                            <div class="col-xs-6">
+                                <div class="panel panel-filled">
+
+                                    <div class="panel-body">
+                                        <h2 class="m-b-none server1">
+                                            {{usage1}}%
+                                        </h2>
+
+                                        <div class="small">Memory usage</div>
+                                        <div class="slight m-t-sm"><i class="fa fa-clock-o"> </i> Updated: <span class="c-white time">19:44:30 pm</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="panel panel-filled">
+                                    <div class="panel-body">
+                                        <h2 class="m-b-none server2">
+                                            {{usage2}}
+                                        </h2>
+
+                                        <div class="small">CPU1 Usage</div>
+                                        <div class="slight m-t-sm"><i class="fa fa-clock-o"> </i> Updated: <span class="c-white time">11:22:15 pm</span></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-6">
+                                <div class="panel panel-filled">
+
+                                    <div class="panel-body">
+                                        <h2 class="m-b-none server3">
+                                            {{usage3}}
+                                        </h2>
+
+                                        <div class="small">CPU2 Usage</div>
+                                        <div class="slight m-t-sm"><i class="fa fa-clock-o"> </i> Updated: <span class="c-white time">04:44:32 pm</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="panel panel-filled">
+                                    <div class="panel-body">
+                                        <h2 class="m-b-none server4">
+                                            {{usage4}}
+                                        </h2>
+
+                                        <div class="small">CPU3 Usage</div>
+                                        <div class="slight m-t-sm"><i class="fa fa-clock-o"> </i> Updated: <span class="c-white time">11:42:11 pm</span></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+
+                <div class="panel panel-filled">
+                    <div class="panel-body">
+
+
+                        <div class="table-responsive">
+                            <table class="table" id="logsTable">
+                                <thead>
+                                <tr>
+                                    <th>
+                                        Job ID
+                                    </th>
+                                    <th>
+                                        IP
+                                    </th>
+                                    <th>
+                                        Time
+                                    </th>
+                                    <th>
+                                        Value
+                                    </th>
+                                    <th>
+                                        Usage
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr ng-repeat="item in items track by $index">
+                                    <td> {{item.jobid}}</td>
+                                    <td> {{item.ip}}</td>
+                                    <td> {{item.time}}</td>
+                                    <td> {{item.value}}</td>
+                                    <td> <span ng-class="{'c-accent': item.usage > 50}">{{item.usage}}%</span></td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End main content-->

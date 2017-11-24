@@ -1,0 +1,99 @@
+<template name="textEditor">
+
+    <div class="container-fluid">
+
+        {{> pageHeader category='Form controls' section='UI Elements' title='Text editor' icon="pe-7s-pen" desc='Super simple WYSIWYG editor for Bootstrap' }}
+
+
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="panel panel-filled">
+                    <div class="panel-body">
+                        <div class="summernote">
+                            Dummy text of the printing and typesetting industry. <strong>Lorem Ipsum has been the industry's</strong> standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                            typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                            <br/>
+                            <br/>
+                            <table id="tableExample1" class="table">
+                                <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>City</th>
+                                    <th>Country</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Abraham</td>
+                                    <td>Vosselaar</td>
+                                    <td>Belgium</td>
+                                </tr>
+                                <tr>
+                                    <td>Phelan</td>
+                                    <td>Lavoir</td>
+                                    <td>Pakistan</td>
+                                </tr>
+                                <tr>
+                                    <td>Raya</td>
+                                    <td>Santomenna</td>
+                                    <td>Burkina Faso</td>
+                                </tr>
+                                <tr>
+                                    <td>Azalia</td>
+                                    <td>Newtown</td>
+                                    <td>Christmas Island</td>
+                                </tr>
+                                <tr>
+                                    <td>Farmat</td>
+                                    <td>Komtirow</td>
+                                    <td>Pakistan</td>
+                                </tr>
+                                <tr>
+                                    <td>Monica</td>
+                                    <td>Standor</td>
+                                    <td>Havana</td>
+                                </tr>
+                                <tr>
+                                    <td>Arnold</td>
+                                    <td>Moksernet</td>
+                                    <td>Austria</td>
+                                </tr>
+                                <tr>
+                                    <td>Olena</td>
+                                    <td>Kornelt</td>
+                                    <td>Germany</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-filled">
+                    <div class="panel-body">
+                        <h4>Installation</h4>
+                        <p>Add <code>div</code> into <code>body</code>; this targeted element will later be rendered to summernote editing tool.</p>
+                        <h4>Run summernote</h4>
+                                <pre>
+Template.textEditor.onRendered(function(){
+
+    $('.summernote').summernote();
+
+});
+                                </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+</template>

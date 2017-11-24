@@ -1,0 +1,284 @@
+_custom.css
+
+added
+
+.bg-light {
+    background-color: $secondary !important;
+}
+
+.bg-dark {
+    background-color: $dark-grey !important;
+}
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+All .html files with navbars:
+
+replace
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+
+with
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+
+- - -
+
+replace
+
+navbar-toggleable-md
+
+with
+
+navbar-expand-lg
+
+- - -
+
+move navbar-brand above navbar-toggler
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+_custom.scss
+
+.container.full-width {
+    width: 100% !important;
+    padding: 0 !important;
+}
+
+to:
+
+.container.full-width {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+}
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+_media-screens.scss
+
+.navbar-toggleable-md .navbar-brand {
+    margin-left: 0;
+}
+
+to
+
+.navbar-expand-lg .navbar-brand {
+    margin-left: 0;
+}
+
+- - -
+
+.navbar-toggleable-md .form-inline {
+    display: block;
+    margin: .5rem auto;
+}
+
+to
+
+.navbar-expand-lg .form-inline {
+    display: block;
+    margin: .5rem auto;
+}
+
+- - -
+
+.navbar-toggleable-sm .form-inline {
+    display: block;
+    margin: .5rem auto;
+}
+
+to
+
+.navbar-expand-sm .form-inline {
+    display: block;
+    margin: .5rem auto;
+}
+
+- - -
+
+.container.container-md {
+    max-width: 990px;
+}
+
+.navbar-toggleable-lg .navbar-nav .nav-link {
+    padding-right: .75rem;
+    padding-left: .75rem;
+}
+
+to:
+
+.container.container-lg {
+    max-width: 990px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: .75rem;
+    padding-left: .75rem;
+}
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+_alerts-badges.scss
+
+add color: $white; to .badge { }
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+_cards.scss
+
+added
+
+.card-inverse .card-blockquote, .card-inverse .card-footer, .card-inverse .card-header, .card-inverse .card-title {
+    color: $white;
+}
+
+.card-inverse .card-blockquote .blockquote-footer, .card-inverse .card-link, .card-inverse .card-subtitle, .card-inverse .card-text {
+    color: rgba(255,255,255,.65);
+}
+
+.card-body .md-icon {
+    display: inline;
+}
+
+- - -
+
+cards.html
+
+replaced card-block with card-body, for cards with icons removed mb-3 from md-icon and added mt-3 to card-title, replaced “extension” icon with “home”
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+carousel.html
+
+removed Carousel centered
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+collapse-dropdowns.html
+
+add <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+replace <i class="md-icon dp18">expand_more</i></span> with <i class="fa fa-angle-down"></i>
+
+replace card-block with card-body
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+_forms-input.sccs
+
+added
+
+.input-group-btn .btn {
+    height: 100%;
+}
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+_popovers-tooltips.scss
+
+added
+
+.tooltip.bs-tooltip-auto[x-placement^=top] .arrow::before, .tooltip.bs-tooltip-top .arrow::before {
+    border-top-color: $secondary-hover;
+}
+
+.tooltip.bs-tooltip-auto[x-placement^=bottom] .arrow::before, .tooltip.bs-tooltip-bottom .arrow::before {
+    border-bottom-color: $secondary-hover;
+}
+
+.tooltip.bs-tooltip-auto[x-placement^=left] .arrow::before, .tooltip.bs-tooltip-left .arrow::before {
+    border-left-color: $secondary-hover;
+}
+
+.tooltip.bs-tooltip-auto[x-placement^=right] .arrow::before, .tooltip.bs-tooltip-right .arrow::before {
+    border-right-color: $secondary-hover;
+}
+
+- - -
+
+added font-size: 1rem; to .popover-title
+
+- - -
+
+added
+
+.popover-content p {
+    font-size: .875rem;
+}
+
+- - -
+
+added
+
+.popover-header {
+    color: $title-color !important;
+    font-size: 1rem;
+    background-color: $secondary;
+    border-bottom: 1px solid $secondary-hover;
+    padding: .75rem 1rem;
+}
+
+.popover-body {
+    padding: .75rem 1rem;
+}
+
+.popover-body p {
+    font-size: .875rem;
+}
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+content-blocks.html
+
+changed card-block to card-body
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+sliders.html
+
+changed card-block to card-body
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+_typography.scss
+
+replaced
+
+.blockquote {
+    border-left: .25rem solid $primary-transparent-2;
+}
+
+with
+
+.blockquote {
+    font-size: 1.25rem;
+    border-left: .25rem solid $primary-transparent-2;
+    margin-bottom: 1rem;
+    padding: .5rem 1rem;
+}
+

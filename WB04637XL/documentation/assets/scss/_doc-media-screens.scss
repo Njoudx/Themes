@@ -1,0 +1,97 @@
+/*------- media screens -------*/
+
+/*--- max-widths ---*/
+
+@media only screen and (max-width: 1200px) {
+.navbar-toggleable-lg .form-inline {
+    display: block;
+    margin: .5rem auto;
+}
+}
+
+@media only screen and (max-width: 991px) {
+.navbar-collapse {
+    margin-top: .625rem;
+}
+
+.navbar-toggleable-md .navbar-brand {
+    margin-left: 0;
+}
+
+.dropdown-item {
+    text-align: center;
+}
+
+.navbar-toggleable-md .form-inline {
+    display: block;
+    margin: .5rem auto;
+}
+
+.side-nav {
+    display: none;
+}
+
+.doc footer {
+    text-align: center;
+}
+
+.doc footer .pull-right {
+    display: block;
+    float: none !important;
+    margin-top: 10px;
+}
+
+.doc footer a {
+    margin: 7.5px;
+}
+}
+
+@media only screen and (max-width: 767px) {
+.navbar-toggleable-sm .form-inline {
+    display: block;
+    margin: .5rem auto;
+}
+}
+
+@media only screen and (max-width: 575px) {
+.container {
+    width: 100%;
+}
+
+.form-inline .form-control {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.form-inline .btn {
+    display: block;
+    width: 70%;
+    margin: 5px auto;
+}
+
+.popover-example .popover {
+    width: 90%;
+    margin: 5%;
+}
+
+footer {
+    text-align: center;
+}
+}
+
+/*--- end of max-widths ---*/
+
+
+/*--- min-widths ---*/
+
+@media only screen and (min-width: 992px) {
+.navbar-toggleable-md .navbar-nav .nav-link {
+    padding-right: .75rem;
+    padding-left: .75rem;
+}
+}
+
+/*--- end of min-widths ---*/
+
+/*------- end of media screens -------*/

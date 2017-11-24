@@ -1,0 +1,79 @@
+<!-- Main content-->
+<section class="content" ng-controller="datamapsCtrl">
+    <div class="container-fluid">
+
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="view-header">
+                    <div class="pull-right text-right" style="line-height: 14px">
+                        <small>Form elements<br>UI Elements<br> <span class="c-white">Datamaps</span></small>
+                    </div>
+                    <div class="header-icon">
+                        <i class="pe page-header-icon pe-7s-map-marker"></i>
+                    </div>
+                    <div class="header-title">
+                        <h3>Datamaps</h3>
+                        <small>
+                            Customizable SVG map visualizations for the web
+                        </small>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="panel panel-filledr">
+
+                    <div class="panel-body">
+                        <div class="text-center">
+                            <span class="m-r-lg">USA <i class="fa fa-long-arrow-right"></i> <span class="c-accent">RUS</span></span>
+                            <span class="m-r-lg">USA <i class="fa fa-long-arrow-right"></i> <span class="c-accent">DEU</span></span>
+                            <span class="m-r-lg">USA <i class="fa fa-long-arrow-right"></i> <span class="c-accent">POL</span></span>
+                            <span class="m-r-lg">USA <i class="fa fa-long-arrow-right"></i> <span class="c-accent">JAP</span></span>
+                            <span class="m-r-lg">USA <i class="fa fa-long-arrow-right"></i> <span class="c-accent">AUS</span></span>
+                            <span class="m-r-lg">USA <i class="fa fa-long-arrow-right"></i> <span class="c-accent">BRA</span></span>
+                            <hr />
+                        </div>
+                        <datamap map="arc_map" plugins="mapPlugins" plugin-data="arcPlugin"></datamap>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <div panel-tools></div>
+                        Example with selected region
+                    </div>
+                    <div class="panel-body">
+                        <datamap map="select_map"></datamap>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <div panel-tools></div>
+                        Example with bubbles
+                    </div>
+                    <div class="panel-body">
+                        <datamap map="bubble_map" plugins="bubblemapPlugins" plugin-data="bubblePlugin"></datamap>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</section>
+<!-- End main content-->

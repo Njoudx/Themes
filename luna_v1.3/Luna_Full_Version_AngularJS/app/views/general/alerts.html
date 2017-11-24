@@ -1,0 +1,75 @@
+<!-- Main content-->
+<toaster-container></toaster-container>
+<section class="content" ng-controller="alertsCtrl">
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="view-header">
+                    <div class="pull-right text-right" style="line-height: 14px">
+                        <small>UI Elements<br>General<br> <span class="c-white">Alerts</span></small>
+                    </div>
+                    <div class="header-icon">
+                        <i class="pe page-header-icon pe-7s-speaker"></i>
+                    </div>
+                    <div class="header-title">
+                        <h3>Alerts</h3>
+                        <small>
+                            Notification and custom alerts
+                        </small>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="panel panel-filled">
+                    <div class="panel-heading">
+                        <div panel-tools></div>
+                        Toastr notifications
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                            toastr is a Javascript library for non-blocking notifications. jQuery is required. The goal is to create a simple core library that can be customized and extended.
+                        </p>
+
+                        <div class="text-center float-e-margins">
+                            <div class="m c-white">Example with LUNA style</div>
+                            <button ng-click="pop1()" class="btn btn-warning">Warning</button>
+                            <button ng-click="pop2()" class="btn btn-info">Info</button>
+                            <button ng-click="pop3()" class="btn btn-success">Success</button>
+                            <button ng-click="pop4()" class="btn btn-danger">Error</button>
+                        </div>
+
+                        <div class="m-t-md">
+                            <p>
+                                You can easy add any notification in your scripts by adding code like this:
+                            </p>
+                    <pre>
+angular.extend(toastrConfig, {
+    newestOnTop: false,
+    positionClass: 'toast-bottom-right',
+    preventDuplicates: false,
+    preventOpenDuplicates: false,
+    progressBar: true
+});
+
+$scope.pop = function () {
+    toastr.info('Info - This is a custom LUNA info notification', {});
+};
+</pre>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</section>
+<!-- End main content-->

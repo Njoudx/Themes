@@ -1,0 +1,125 @@
+<!-- Main content-->
+<section class="content" ng-controller="chartjsCtrl">
+    <div class="container-fluid">
+
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="view-header">
+                    <div class="pull-right text-right" style="line-height: 14px">
+                        <small>Charts and graphs<br>UI Elements<br> <span class="c-white">ChartJS</span></small>
+                    </div>
+                    <div class="header-icon">
+                        <i class="pe page-header-icon pe-7s-graph3"></i>
+                    </div>
+                    <div class="header-title">
+                        <h3>ChartJS</h3>
+                        <small>
+                            Simple HTML5 Charts using the canvas element
+                        </small>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <div panel-tools></div>
+                        Bar type chart
+                    </div>
+                    <div class="panel-body">
+                        <div>
+                            <canvas id="bar" height="180" class="chart chart-bar" chart-dataset-override="bardatasetOverride"  chart-labels="barLabels" chart-data="barData" chart-options="globalOptions" chart-series="barSeries"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <div panel-tools></div>
+                        Line type chart
+                    </div>
+                    <div class="panel-body">
+                        <div>
+                            <canvas id="line" height="180" class="chart chart-line" chart-dataset-override="linedatasetOverride"  chart-labels="lineLabels" chart-data="lineData" chart-options="globalOptions" chart-series="lineSeries"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <div panel-tools></div>
+                        Single Bar type chart
+                    </div>
+                    <div class="panel-body">
+                        <div>
+                            <canvas id="bar2" height="180" class="chart chart-bar" chart-dataset-override="singlebardatasetOverride"  chart-labels="singlebarLabels" chart-data="singlebarData" chart-options="globalOptions" chart-series="singlebarSeries"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <div panel-tools></div>
+                        Line type chart without curve
+                    </div>
+                    <div class="panel-body">
+                        <div>
+                            <canvas id="line2" height="180" class="chart chart-line" chart-dataset-override="sharplinedatasetOverride"  chart-labels="sharplineLabels" chart-data="sharplineData" chart-options="globalOptions" chart-series="sharplineSeries"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <div panel-tools></div>
+                        Polar type chart
+                    </div>
+                    <div class="panel-body">
+                        <div>
+                            <canvas id="polar" height="180" class="chart chart-polar-area" chart-dataset-override="polardatasetOverride"  chart-labels="polarLabels" chart-data="polarData" chart-options="globalOptions"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <div panel-tools></div>
+                        Doughnut bar chart
+                    </div>
+                    <div class="panel-body">
+                        <div>
+                            <canvas id="doughnut" height="180" class="chart chart-doughnut" chart-dataset-override="doughnutdatasetOverride"  chart-labels="doughnutLabels" chart-data="doughnutData" chart-options="globalOptions"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</section>
+<!-- End main content-->

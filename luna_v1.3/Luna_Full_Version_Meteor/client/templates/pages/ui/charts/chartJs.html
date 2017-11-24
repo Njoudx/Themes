@@ -1,0 +1,104 @@
+<template name="chartJS">
+
+    <div class="container-fluid">
+
+        {{> pageHeader category='Charts and graphs' section='General' title='ChartJS' icon=" pe-7s-graph3" desc='Simple HTML5 Charts using the canvas element' }}
+
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="panel">
+                    <div class="panel-heading">
+                        {{>panelTools }}
+                        Bar type chart
+                    </div>
+                    <div class="panel-body">
+                        <div>
+                            <canvas id="barOptions" height="180"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="panel">
+                    <div class="panel-heading">
+                        {{>panelTools }}
+                        Line type chart
+                    </div>
+                    <div class="panel-body">
+                        <div>
+                            <canvas id="lineOptions" height="180"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="panel">
+                    <div class="panel-heading">
+                        {{>panelTools }}
+                        Single Bar type chart
+                    </div>
+                    <div class="panel-body">
+                        <div>
+                            <canvas id="singleBarOptions" height="140"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="panel">
+                    <div class="panel-heading">
+                        {{>panelTools }}
+                        Line type chart without curve
+                    </div>
+                    <div class="panel-body">
+                        <div>
+                            <canvas id="sharpLineOptions" height="140"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="panel">
+                    <div class="panel-heading">
+                        {{>panelTools }}
+                        Polar type chart
+                    </div>
+                    <div class="panel-body">
+                        <div>
+                            <canvas id="polarOptions" height="180"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="panel">
+                    <div class="panel-heading">
+                        {{>panelTools }}
+                        Doughnut bar chart
+                    </div>
+                    <div class="panel-body">
+                        <div>
+                            <canvas id="doughnutChart" height="180"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+</template>
